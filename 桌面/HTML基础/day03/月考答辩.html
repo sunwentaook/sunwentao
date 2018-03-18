@@ -1,0 +1,2320 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+	<title>月考答辩</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.womaiwang{
+			width: auto;
+			height: 10000px;
+			border: 1px red solid;
+		}
+		.gouwuche{
+			width: 34px;
+			height: 563px;
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			right: 0px;
+			float: right;
+			background-color: black;
+		}
+		.biaotou1 img{
+			width: 1250px;
+			height: 100px;
+		}
+		
+		.biaotou2{
+			height: 32px;
+			background-color: #e6e6e6;
+		}
+		.bt1{
+			margin: 0 auto;
+			width: 1200px;
+			height: 32px;
+		}
+		.neirong{
+			width: 1211px;
+			height: 8871px;
+			border: 1px black solid;
+			margin: 0 auto;
+		}
+		.biaotou3{
+			margin: 0 auto;
+			width: 1200px;
+			height: 150px;
+			text-align: left;
+		}
+		.womei,.jidan{
+			padding-top: 30px;
+		}
+		table{
+			float: right;
+		}
+		.kuang{
+			margin-top: 40px;
+			width: 500px;
+			height: 35px;
+			border: 2px red solid;
+		}
+		.sousuo{
+			margin-top: 40px;
+			height: 40px;
+			width: 80px;
+			background-color: red;
+			border: 1px red solid;
+			color: white;
+			font-size: 16px;
+		}
+		.sousuo1{
+			margin-top: 40px;
+			margin-right: 200px;
+			width: 40px;
+		}
+		.niunai a{
+			text-decoration: none;
+			padding-right: 10px;
+			font-size: 14px;
+			color: #ADADAD;
+		}
+		.er{
+			float: right;
+			margin-top: 35px;
+			margin-right: -830px;
+		}
+		.bt2 a{
+			text-decoration: none;
+			font-size: 12px;
+			color: black;
+		}
+		.bt4 a{
+			color: black;
+			font-size: 12px;
+			text-decoration: none;
+			padding-right: 5px;
+		}
+		.bt3,.bt5,.bt6{
+			font-size: 12px;
+		}
+		.bt4{
+			float: right;
+			margin-top: -32px;
+		}
+		.neirong1{
+			margin: 0 auto;
+			width: 1211px;
+			height: 1830px;
+			border: 1px blue solid;
+		}
+		.nr1{
+			height: 46px;
+		}
+		.nr2{
+			width: 210px;
+			height: 46px;
+			background-color: #007500;
+			color: white;
+			text-align: center;
+			line-height: 40px;
+		}
+		.nr3{
+			float: left;
+			margin-top: -30px;
+			margin-left: 210px;
+		}
+		.nr3 a{
+			text-decoration: none;
+			color: black;
+			padding: 10px;
+		}
+		.nr4{
+			float: right;
+			margin-top: -38px;
+		}
+		.nr5{
+			width: 210px;
+			height: 450px;
+			background-color: #00A600;
+		}
+		.nr5 a{
+			color: white;
+			text-decoration: none;
+			font-size: 14px;
+			padding-right: 10px;
+		}
+		.nrc li{
+			padding-top: 13px;
+			margin-left: 50px;
+		}
+		.nr6{
+			float: left;
+			margin-top: -450px;
+			margin-left: 210px;
+		}
+		.nr7{
+			float: right;
+			margin-top: -450px;
+			width: 200px;
+			height: 450px;
+		}
+		.nr10{
+			width: 200px;
+			height: 95px;
+		}
+		.nra{
+			width: 200px;
+			height: 25px;
+			background-color: #E0E0E0;
+		}
+		.nra a{
+			margin: 6px;
+			text-decoration: none;
+			color: black;
+			font-size: 13px;
+			border-bottom: 2px #009100 solid;
+		}
+		.nrb{
+			margin-left: 30px;
+			width: 170px;
+			height: 75px;
+		}
+		.nrb a{
+			font-size: 12px;
+			text-decoration: none;
+			color: #8e8e8e;
+		}
+		/*.nrd{
+			border: 1px red	solid;
+		}*/
+		.fl1,.fl3,.fl5{
+			height: 40px;
+			border-bottom: 2px #00BB00	solid
+		}
+		.fl1 img{
+			float: left;
+			margin-top: -28px;
+			margin-left: 120px;
+		}
+		.fl3 img{
+			float: left;
+			margin-top: -28px;
+			margin-left: 120px;
+		}
+		.fl5 img{
+			float: left;
+			margin-top: -28px;
+			margin-left: 120px;
+		}
+		.fla{
+			width: 120px;
+			height: 40px;
+		}
+		.fla a{
+			text-decoration: none;
+			color: black;
+			font-size: 20px;
+		}
+		.fl2{
+			height: 320px;
+			/*border: 1px red solid;*/
+		}
+		
+		.fld{
+			width: 240px;
+			height: 320px;
+			border-left: 1px #ADADAD solid;
+			border-right: 1px #ADADAD solid;
+			float: left;
+			margin-top: -326px;
+			margin-left: 242px;
+		}
+		.fle{
+			width: 240px;
+			height: 320px;
+			border-left: 1px #ADADAD solid;
+			border-right: 1px #ADADAD solid;
+			float: left;
+			margin-top: -326px;
+			margin-left: 484px;
+		}
+		.flf{
+			width: 240px;
+			height: 320px;
+			/*border: 1px red solid;*/
+			border-left: 1px #ADADAD solid;
+			border-right: 1px #ADADAD solid;
+			float: left;
+			margin-top: -326px;
+			margin-left: 726px;
+		}
+		.flg{
+			width: 240px;
+			height: 320px;
+			/*border: 1px red solid;*/
+			border-left: 1px #ADADAD solid;
+			border-right: 1px #ADADAD solid;
+			float: left;
+			margin-top: -326px;
+			margin-left: 968px;
+		}
+		.flh,.flh1,.flh2,.flh3{
+			margin: 0 auto;
+			width: 196px;
+			height: 216px;
+			/*border: 1px red solid;*/
+		}
+		.flh img{
+			width: 196px;
+			height: 216px;
+		}
+		.flh1 img{
+			width: 196px;
+			height: 216px;
+		}
+		.flh2 img{
+			width: 196px;
+			height: 216px;
+		}
+		.flh3 img{
+			width: 196px;
+			height: 216px;
+		}
+		.fli{
+			width: 200px;
+			height: 80px;
+			margin-left: 21px;
+			margin-bottom: 10px;
+			/*border: 1px red solid;*/
+		}
+		.flj{
+			width: 240px;
+			height: 100px;
+			/*border: 1px red solid;*/
+			background-color: #F0F0F0;
+		}
+		.fla1 a{
+			width: 70px;
+			height: 25px;
+			background-color: #FF8040;
+			font-size: 18px;
+			color: white;
+			text-decoration: none;
+			line-height: 25px;
+			float: right;
+			margin-top: -36px;
+			margin-right: 20px;
+		}
+		.fli a{
+			text-decoration: none;
+		}
+		.a1{
+			color: black;
+		}
+		.a2{
+			color: #BEBEBE;
+			font-size: 14px;
+		}
+		.a3{
+			color: red;
+			font-size: 18px;
+		}
+		.ab img{
+			float: left;
+			margin-top: -426px;
+			margin-left: 241px;
+		}
+		.ac img{
+			float: left;
+			margin-top: -426px;
+			margin-left: 484px;
+		}
+		.ad img{
+			float: right;
+			margin-top: -426px;
+		}
+		.ae img{
+			float: left;
+			margin-top: -216px;
+			margin-left: 242px;
+		}
+		.af img{
+			float: right;
+			margin-top: -216px;
+			margin-right: 243px;
+		}
+		.ag img{
+			float: right;
+			margin-top: -216px;
+		}
+		.fl6{
+			width: 1211px;
+			height: 320px;
+			/*border: 1px red solid;*/
+		}
+		.bb img{
+			width: 240px;
+			height: 320px;
+			float: right;
+			margin-top: -326px;
+			margin-right: 478px;
+			/*border: 1px red solid;*/
+		}
+		.bc img{
+			width: 240px;
+			height: 320px;
+			float: right;
+			margin-top: -326px;
+			margin-right: 240px;
+		}
+		.bd img{
+			width: 240px;
+			height: 320px;
+			float: right;
+			margin-top: -326px;
+		}
+		.fl7{
+			width: 1211px;
+			height: 30px;
+			/*border: 1px red solid;*/
+		}
+		.fl8{
+			width: 1209px;
+			height: 110px;
+			/*border: 1px red solid;*/
+		}
+		.c2 img{
+			float: left;
+			margin-top: -116px;
+			margin-left: 403px;
+			/*border: 1px red solid;*/
+		}
+		.c3 img{
+			float: right;
+			margin-top: -116px;
+		}
+		.F1a{
+			width: 1211px;
+			height: 50px;
+			border-bottom: 1px #00B2BF solid;
+		}
+		.F1a1{
+			float: left;
+			margin-top: 8px;
+			width: 242px;
+			height: 38px;
+			border-left: 5px red solid;
+			padding-left: 10px;
+		}
+		.F1a1 a{
+			font-size: 20px;
+			text-decoration: none;
+		}
+		.F1a2{
+			float: left;
+			margin-top: 8px;
+			width: 242px;
+			height: 38px;
+			/*border: 1px red solid;*/
+		}
+		.F1a2 a{
+			text-decoration: none;
+			line-height: 38px;
+			padding-left: 30px;
+			color: black;
+		}
+		.F1b{
+			width: 1211px;
+			height: 504px;
+			/*border: 1px red solid;*/
+		}
+		.F1b1{
+			width: 242px;
+			height: 504px;
+			/*border: 1px red solid;*/
+			background-color: #CAE5E8;
+		}
+		.F1b2{
+			width: 242px;
+			height: 166px;
+			/*border: 1px red solid;*/
+		}
+		.F1c{
+			float: left;
+			margin-top: -505px;
+			margin-left: 243px;
+			width: 241px;
+			height: 250px;
+			border: 1px #D7D7D7 solid;
+		}
+		.F1d{
+			float: left;
+			margin-top: -505px;
+			margin-left: 486px;
+			width: 241px;
+			height: 250px;
+			border: 1px #D7D7D7 solid;
+		}
+		.F1e{
+			float: left;
+			margin-top: -505px;
+			margin-left: 729px;
+			width: 239px;
+			height: 250px;
+			border: 1px #D7D7D7 solid;
+		}
+		.F1f{
+			float: right;
+			margin-top: -505px;
+			width: 240px;
+			height: 250px;
+			border: 1px #D7D7D7 solid;
+		}
+		.F1g{
+			float: left;
+			margin-top: -254px;
+			margin-left: 243px;
+			width: 241px;
+			height: 250px;
+			border: 1px #D7D7D7 solid;
+		}
+		.F1h{
+			float: left;
+			margin-top: -254px;
+			margin-left: 486px;
+			width: 241px;
+			height: 250px;
+			border: 1px #D7D7D7 solid;
+		}
+		.F1l{
+			float: left;
+			margin-top: -254px;
+			margin-left: 729px;
+			width: 239px;
+			height: 250px;
+			border: 1px #D7D7D7 solid;
+		}
+		.F1i{
+			float: right;
+			margin-top: -254px;
+			width: 240px;
+			height: 250px;
+			border: 1px #D7D7D7 solid;
+		}
+		.F1c img{
+			width: 180px;
+			height: 180px;
+		}
+		.F1d img{
+			width: 180px;
+			height: 180px;
+		}
+		.F1e img{
+			width: 180px;
+			height: 180px;
+		}
+		.F1f img{
+			width: 180px;
+			height: 180px;
+		}
+		.F1h img{
+			width: 180px;
+			height: 180px;
+		}
+		.F1g img{
+			width: 180px;
+			height: 180px;
+		}
+		.F1l img{
+			width: 180px;
+			height: 180px;
+		}
+		.F1i img{
+			width: 180px;
+			height: 180px;
+			
+		}
+		.F1c3,.F1d3,.F1e3,.F1f3,.F1g3,.F1h3,.F1l3,.F1i3{
+			width: 180px;
+			height: 180px;
+			margin: 5px auto;
+		}
+		.F1c1,.F1c2{
+			width: 200px;
+			height: 25px;
+			margin-left: 20px;
+			/*border: 1px red solid;*/
+		}
+		.F1c1 a{
+			color: black;
+			text-decoration: none;
+			font-size: 15px;
+		}
+		.F1c2 a{
+			color: red;
+			text-decoration: none;
+		}
+		.F1z{
+			float: right;
+			margin-top: -506px;
+			margin-right: 240px;
+		}
+		.A1{
+			width: 1211px;
+			height: 50px;
+			border-bottom: 2px green solid;
+		}
+		.A2{
+			width: 1211px;
+			height: 365px;
+			/*border: 1px red solid;*/
+		}
+		.A2a,.A2b,.A2c,.A2d,.A2e{
+			width: 242px;
+			height: 365px;
+			border: 1px #D7D7D7 solid;
+		}
+		.A2b{
+			float: left;
+			margin-top: -367px;
+			margin-left: 242px;
+		}
+		.A2c{
+			float: left;
+			margin-top: -367px;
+			margin-left: 484px;
+		}
+		.A2d{
+			float: right;
+			margin-top: -367px;
+			margin-right: 242px;
+		}
+		.A2e{
+			float: right;
+			margin-top: -367px;
+			
+		}
+		.A2a1{
+			width: 241px;
+			height: 82px;
+			/*border: 1px #D7D7D7 solid;*/
+		}
+		.A2a1 a{
+			text-decoration: none;
+			line-height: 82px;
+			font-size: 18px;
+			color: black;
+			padding-left: 85px;
+		}
+		.A2a2{
+			padding-left: 70px;
+		}
+		.A2a3 a{
+			
+			text-decoration: none;
+			color: black;
+			padding-left: 30px;
+			font-size: 15px;
+			/*border: 1px red solid;*/
+		}
+		.kong{
+			margin-top: 50px;
+			width: auto;
+			height: 250px;
+			border-top: 2px #D7D7D7 solid;
+			border-bottom: 2px green solid;
+			background-color: #ECECEC;
+		}
+		.kong1{
+			margin-left: 50px;
+		}
+		.kong1a{
+			float: left;
+			margin: 40px 50px;
+		}
+		.kong12 a{
+			font-size: 13px;
+			text-decoration: none;
+			color: #707070;
+		}
+		.kong2{
+			width: 90px;
+			height: 120px;
+			float: right;
+			margin-right: 300px;
+			margin-top: 50px;
+			/*border: 1px red solid;*/
+		}
+		.kong2 a{
+			text-decoration: none;
+			font-size: 17px;
+			color: red;
+		}
+		.kong3{
+			width: 90px;
+			height: 120px;
+			float: right;
+			margin-right: 180px;
+			margin-top: -122px;
+			/*border: 1px red solid;*/
+		}
+		.kong3 a{
+			text-decoration: none;
+			font-size: 17px;
+			color: red;
+		}
+		.neirong4{
+			width: 700px;
+			height: 30px;
+			margin: 30px auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="womaiwang">
+		<div class="biaotou1">
+			<img src="/home/sunwentao/桌面/tupian/表头.jpg">
+		</div>
+		<div class="biaotou2">
+			<div class="bt1">
+				<div class="bt2">
+					<a href=""><img src="/home/sunwentao/桌面/tupian/房子.png"></a>
+					<a href="">当前城市：</a>
+					<select name="cs" class="bt3">
+						<option value="dh">北京</option>
+						<option value="fl">天津</option>
+						<option value="ts">上海</option>
+					</select>
+					<a href="">hi,欢迎来我卖网!</a>
+					<a href="">登录</a>
+					<a href="">注册</a>
+				</div>
+				<div class="bt4">
+					<select name="cd" class="bt6">
+						<option value="qt">我的账户</option>
+					</select>
+					<a href=""><img src="/home/sunwentao/桌面/tupian/购物车.png">购物车0件</a>
+					<a href="">|</a>
+					<select name="ca" class="bt5">
+						<option value="qw">客户服务</option>
+						<option value="qe">帮助中心</option>
+						<option value="qr">新手上路</option>
+					</select>
+					<a href="">|</a>
+					<a href="">大客户</a>
+					<a href="">|</a>
+					<a href=""><img src="/home/sunwentao/桌面/tupian/ICBC.png"></a>
+					<a href=""><img src="/home/sunwentao/桌面/tupian/移动.png"></a>
+				</div>
+			</div>
+		</div>
+		<div class="neirong">
+			<div class="biaotou3">
+				<img src="/home/sunwentao/桌面/tupian/我买网.png" class="womei">
+				<img src="/home/sunwentao/桌面/tupian/鸡蛋.jpg" class="jidan">
+				
+				<table>
+					<tr>
+						<td>
+							<input class="kuang" type="text" name="name" placeholder="圣贤圣贤圣贤圣贤">
+						</td>
+						<td>
+							<input class="sousuo" type="submit" name="s" value="搜索">
+						</td>
+						<td>
+							<p class="sousuo1">高级搜索</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="niunai">
+							<a href="">青团</a>
+							<a href="">每日坚果</a>
+							<a href="">牛奶</a>
+							<a href="">红颜草莓</a>
+							<a href="">褚柑</a>
+							<a href="">实物我买卡</a>
+						</td>
+
+					</tr>
+				</table>
+				<img src="/home/sunwentao/桌面/tupian/二维码.jpg" class="er">	
+			</div>
+			<div class="neirong1">
+				<div class="nr1">
+					<div class="nr2">
+					全部商品分类
+					</div>
+					<div class="nr3">
+						<a href="">团购</a>
+						<a href="">每日鲜</a>
+						<a href="">我买酒</a>
+						<a href="">我买严选</a>
+						<a href="">安心享</a>
+						<a href="">包邮直送</a>
+						<a href="">全球购</a>
+						<a href="">三同专区</a>
+					</div>
+					<div class="nr4">
+						<select name="cp">
+						<option value="qt">购物车</option>
+					</select>
+					</div>
+				</div>
+				<div class="nrd">
+						<div class="nr5">
+							<ul type="none" class="nrc">
+								<li>
+									<a href="">肉禽水产</a>
+									<a href="">水果蔬菜</a>
+								</li>
+								<li>
+									<a href="">进口生鲜</a>
+									<a href="">进口水果</a>
+								</li>
+								<li>
+									<a href="">进口食品</a>
+									<a href="">进口直采</a>
+								</li>
+								<li>
+									<a href="">酒</a>
+									<a href="">饮料/冲调</a>
+									<a href="">茶</a>
+								</li>
+								<li>
+									<a href="">休闲零食</a>
+									<a href="">地方特产</a>
+								</li>
+								<li>
+									<a href="">营养健康</a>
+									<a href="">奶制品</a>
+								</li>
+								<li>
+									<a href="">粮油副食</a>
+									<a href="">调味干货</a>
+								</li>
+								<li>
+									<a href="">母婴食品</a>
+									<a href="">母婴用品</a>
+								</li>
+								<li>
+									<a href="">个护美装</a>
+									<a href="">家用清洁</a>
+								</li>
+								<li>
+									<a href="">家电3C</a>
+									<a href="">厨具家纺</a>
+								</li>
+								<li>
+									<a href="">礼卡礼劵</a>
+								</li>
+							</ul>
+						</div>
+						<div class="nr6">
+							<img src="/home/sunwentao/桌面/tupian/美女.jpg">
+						</div>
+						<div class="nr7">
+							<div class="nr10">
+								<div class="nra">
+									<a href="">服务公告</a>
+									<a href="">卡劵专栏</a>
+									<a href="">VIP通道</a>
+								</div>
+								<ul class="nrb">
+									<li><a href="">我买卡简介</a></li>
+									<li><a href="">钱库优惠劵使用小提示</a></li>
+									<li><a href="">优惠劵使用说明</a></li>
+								</ul>
+							</div>
+							<table class="nr9">
+								<tr>
+									<td><img src="/home/sunwentao/桌面/tupian/充值.png"></td>
+									<td><img src="/home/sunwentao/桌面/tupian/我买宝.png"></td>
+									<td><img src="/home/sunwentao/桌面/tupian/积分.png"></td>
+								</tr>
+								<tr>
+									<td><img src="/home/sunwentao/桌面/tupian/VIP.png"></td>
+									<td><img src="/home/sunwentao/桌面/tupian/团购.png"></td>
+									<td><img src="/home/sunwentao/桌面/tupian/扶贫.png"></td>
+								</tr>
+								<tr>
+									<td><img src="/home/sunwentao/桌面/tupian/电子卡.png"></td>
+									<td><img src="/home/sunwentao/桌面/tupian/大客户.png"></td>
+									<td><img src="/home/sunwentao/桌面/tupian/我买卡.png"></td>
+								</tr>
+							</table>
+							<img src="/home/sunwentao/桌面/tupian/荷兰特饮.jpg" class="nr8">
+						</div>
+				</div>
+				<div class="fl1">
+					<div class="fla"><a href="">每日劲爆品</a></div>
+					<img src="/home/sunwentao/桌面/tupian/折扣.jpg">
+				</div>
+				<div class="fl2">
+					<div class="flc"><img src="/home/sunwentao/桌面/tupian/A1.jpg"></div>
+					<div class="fld">
+						<div class="flh"><img src="/home/sunwentao/桌面/tupian/A2.jpg"></div>
+						<div class="flj"><p class="fli">
+							<a href="" class="a1">中粮时怡牛肉棒(黑椒味)</a>
+							<a href="" class="a2">218g|正宗黑椒味，大口嚼到爽</a>
+							<a href="" class="a3">$29.9</a>
+							<div class="fla1"><a href="">去看看</a></div>
+						</p></div>
+					</div>
+					<div class="fle">
+						<div class="flh1"><img src="/home/sunwentao/桌面/tupian/A3.jpg"></div>
+						<div class="flj"><p class="fli">
+							<a href="" class="a1">中粮时怡牛肉棒(黑椒味)</a>
+							<a href="" class="a2">218g|正宗黑椒味，大口嚼到爽</a>
+							<a href="" class="a3">$29.9</a>
+							<div class="fla1"><a href="">去看看</a></div>
+						</p></div>
+					</div>
+					<div class="flf"><div class="flh2"><img src="/home/sunwentao/桌面/tupian/A4.jpg"></div>
+						<div class="flj"><p class="fli">
+							<a href="" class="a1">中粮时怡牛肉棒(黑椒味)</a>
+							<a href="" class="a2">218g|正宗黑椒味，大口嚼到爽</a>
+							<a href="" class="a3">$29.9</a>
+							<div class="fla1"><a href="">去看看</a></div>
+						</p></div></div>
+					<div class="flg"><div class="flh3"><img src="/home/sunwentao/桌面/tupian/A5.jpg"></div>
+						<div class="flj"><p class="fli">
+							<a href="" class="a1">中粮时怡牛肉棒(黑椒味)</a>
+							<a href="" class="a2">218g|正宗黑椒味，大口嚼到爽</a>
+							<a href="" class="a3">$29.9</a>
+							<div class="fla1"><a href="">去看看</a></div>
+						</p></div></div>
+				</div>
+				<div class="fl3">
+					<div class="fla"><a href="">我买特色</a></div>
+					<img src="/home/sunwentao/桌面/tupian/B8.jpg">
+				</div>
+				<div class="fl4">
+					<div class="aa"><img src="/home/sunwentao/桌面/tupian/B1.jpg""></div>
+					<div class="ab"><img src="/home/sunwentao/桌面/tupian/B2.jpg"></div>
+					<div class="ac"><img src="/home/sunwentao/桌面/tupian/B3.jpg"></div>
+					<div class="ad"><img src="/home/sunwentao/桌面/tupian/B4.jpg"></div>
+					<div class="ae"><img src="/home/sunwentao/桌面/tupian/B5.jpg"></div>
+					<div class="af"><img src="/home/sunwentao/桌面/tupian/B6.jpg"></div>
+					<div class="ag"><img src="/home/sunwentao/桌面/tupian/B7.jpg"></div>
+				</div>
+				<div class="fl5">
+					<div class="fla"><a href="">我买推荐</a></div>
+					<img src="/home/sunwentao/桌面/tupian/C1.jpg">
+				</div>
+				<div class="fl6">
+					<div class="ba"><img src="/home/sunwentao/桌面/tupian/C2.jpg"></div>
+					<div class="bb"><img src="/home/sunwentao/桌面/tupian/C3.jpg"></div>
+					<div class="bc"><img src="/home/sunwentao/桌面/tupian/C4.jpg"></div>
+					<div class="bd"><img src="/home/sunwentao/桌面/tupian/C5.jpg"></div>	
+				</div>
+				<div class="fl7"></div>
+				<div class="fl8">
+					<div class="c1"><img src="/home/sunwentao/桌面/tupian/D1.jpg"></div>
+					<div class="c2"><img src="/home/sunwentao/桌面/tupian/D2.jpg"></div>
+					<div class="c3"><img src="/home/sunwentao/桌面/tupian/D3.jpg"></div>
+				</div>
+			</div>
+			<div class="neirong2">
+				<div class="F1">
+					<div class="F1a">
+						<div class="F1a1"><a href="">进口食品</a></div>
+						<div class="F1a2">
+							<a href="">精选推荐</a>
+							<a href="">热卖推荐</a>
+						</div>
+					</div>
+					<div class="F1b">
+						<div class="F1b1">
+							<div class="F1b2">
+								<div class="F1b21"><img src="/home/sunwentao/桌面/tupian/E10.png"></div>
+							</div>
+							<div class="F1b3"><img src="/home/sunwentao/桌面/tupian/E1.jpg"></div>
+						</div>
+					</div>
+					<div class="F1c">
+						<div class="F1c3">
+							<img src="/home/sunwentao/桌面/tupian/E2.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1d">
+						<div class="F1d3">
+							<img src="/home/sunwentao/桌面/tupian/E3.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1e">
+						<div class="F1e3">
+							<img src="/home/sunwentao/桌面/tupian/E4.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1f">
+						<div class="F1f3">
+							<img src="/home/sunwentao/桌面/tupian/E5.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1g">
+						<div class="F1g3">
+							<img src="/home/sunwentao/桌面/tupian/E6.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1h">
+						<div class="F1h3">
+							<img src="/home/sunwentao/桌面/tupian/E7.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1l">
+						<div class="F1l3">
+							<img src="/home/sunwentao/桌面/tupian/E8.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1i">
+						<div class="F1i3">
+							<img src="/home/sunwentao/桌面/tupian/E9.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+				</div>
+				<div class="F1">
+					<div class="F1a">
+						<div class="F1a1"><a href="">进口食品</a></div>
+						<div class="F1a2">
+							<a href="">精选推荐</a>
+							<a href="">热卖推荐</a>
+						</div>
+					</div>
+					<div class="F1b">
+						<div class="F1b1">
+							<div class="F1b2">
+								<div class="F1b21"><img src="/home/sunwentao/桌面/tupian/F10.png"></div>
+							</div>
+							<div class="F1b3"><img src="/home/sunwentao/桌面/tupian/F1.jpg"></div>
+						</div>
+					</div>
+					<div class="F1c">
+						<div class="F1c3">
+							<img src="/home/sunwentao/桌面/tupian/F2.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1d">
+						<div class="F1d3">
+							<img src="/home/sunwentao/桌面/tupian/F3.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1e">
+						<div class="F1e3">
+							<img src="/home/sunwentao/桌面/tupian/F4.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1f">
+						<div class="F1f3">
+							<img src="/home/sunwentao/桌面/tupian/F5.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1g">
+						<div class="F1g3">
+							<img src="/home/sunwentao/桌面/tupian/F6.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1h">
+						<div class="F1h3">
+							<img src="/home/sunwentao/桌面/tupian/F7.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1l">
+						<div class="F1l3">
+							<img src="/home/sunwentao/桌面/tupian/F8.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1i">
+						<div class="F1i3">
+							<img src="/home/sunwentao/桌面/tupian/F9.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+				</div>
+				<div class="F1">
+					<div class="F1a">
+						<div class="F1a1"><a href="">进口食品</a></div>
+						<div class="F1a2">
+							<a href="">精选推荐</a>
+							<a href="">热卖推荐</a>
+						</div>
+					</div>
+					<div class="F1b">
+						<div class="F1b1">
+							<div class="F1b2">
+								<div class="F1b21"><img src="/home/sunwentao/桌面/tupian/G10.png"></div>
+							</div>
+							<div class="F1b3"><img src="/home/sunwentao/桌面/tupian/G1.jpg"></div>
+						</div>
+					</div>
+					<div class="F1c">
+						<div class="F1c3">
+							<img src="/home/sunwentao/桌面/tupian/G2.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1d">
+						<div class="F1d3">
+							<img src="/home/sunwentao/桌面/tupian/G3.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1e">
+						<div class="F1e3">
+							<img src="/home/sunwentao/桌面/tupian/G4.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1f">
+						<div class="F1f3">
+							<img src="/home/sunwentao/桌面/tupian/G5.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1g">
+						<div class="F1g3">
+							<img src="/home/sunwentao/桌面/tupian/G6.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1h">
+						<div class="F1h3">
+							<img src="/home/sunwentao/桌面/tupian/G7.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1l">
+						<div class="F1l3">
+							<img src="/home/sunwentao/桌面/tupian/G8.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1i">
+						<div class="F1i3">
+							<img src="/home/sunwentao/桌面/tupian/G9.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+				</div>
+				<div class="F1">
+					<div class="F1a">
+						<div class="F1a1"><a href="">进口食品</a></div>
+						<div class="F1a2">
+							<a href="">精选推荐</a>
+							<a href="">热卖推荐</a>
+						</div>
+					</div>
+					<div class="F1b">
+						<div class="F1b1">
+							<div class="F1b2">
+								<div class="F1b21"><img src="/home/sunwentao/桌面/tupian/H10.png"></div>
+							</div>
+							<div class="F1b3"><img src="/home/sunwentao/桌面/tupian/H1.jpg"></div>
+						</div>
+					</div>
+					<div class="F1c">
+						<div class="F1c3">
+							<img src="/home/sunwentao/桌面/tupian/H2.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1d">
+						<div class="F1d3">
+							<img src="/home/sunwentao/桌面/tupian/H3.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1e">
+						<div class="F1e3">
+							<img src="/home/sunwentao/桌面/tupian/H4.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1f">
+						<div class="F1f3">
+							<img src="/home/sunwentao/桌面/tupian/H5.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1g">
+						<div class="F1g3">
+							<img src="/home/sunwentao/桌面/tupian/H6.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1h">
+						<div class="F1h3">
+							<img src="/home/sunwentao/桌面/tupian/H7.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1l">
+						<div class="F1l3">
+							<img src="/home/sunwentao/桌面/tupian/H8.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1i">
+						<div class="F1i3">
+							<img src="/home/sunwentao/桌面/tupian/H9.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+				</div>
+				<div class="F1">
+					<div class="F1a">
+						<div class="F1a1"><a href="">进口食品</a></div>
+						<div class="F1a2">
+							<a href="">精选推荐</a>
+							<a href="">热卖推荐</a>
+						</div>
+					</div>
+					<div class="F1b">
+						<div class="F1b1">
+							<div class="F1b2">
+								<div class="F1b21"><img src="/home/sunwentao/桌面/tupian/I10.png"></div>
+							</div>
+							<div class="F1b3"><img src="/home/sunwentao/桌面/tupian/I1.jpg"></div>
+						</div>
+					</div>
+					<div class="F1c">
+						<div class="F1c3">
+							<img src="/home/sunwentao/桌面/tupian/I2.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1d">
+						<div class="F1d3">
+							<img src="/home/sunwentao/桌面/tupian/I3.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1e">
+						<div class="F1e3">
+							<img src="/home/sunwentao/桌面/tupian/I4.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1f">
+						<div class="F1f3">
+							<img src="/home/sunwentao/桌面/tupian/I5.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1g">
+						<div class="F1g3">
+							<img src="/home/sunwentao/桌面/tupian/I6.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1h">
+						<div class="F1h3">
+							<img src="/home/sunwentao/桌面/tupian/I7.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1l">
+						<div class="F1l3">
+							<img src="/home/sunwentao/桌面/tupian/I8.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1i">
+						<div class="F1i3">
+							<img src="/home/sunwentao/桌面/tupian/I9.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+				</div>
+				<div class="F1">
+					<div class="F1a">
+						<div class="F1a1"><a href="">进口食品</a></div>
+						<div class="F1a2">
+							<a href="">精选推荐</a>
+							<a href="">热卖推荐</a>
+						</div>
+					</div>
+					<div class="F1b">
+						<div class="F1b1">
+							<div class="F1b2">
+								<div class="F1b21"><img src="/home/sunwentao/桌面/tupian/J10.png"></div>
+							</div>
+							<div class="F1b3"><img src="/home/sunwentao/桌面/tupian/J1.jpg"></div>
+						</div>
+					</div>
+					<div class="F1c">
+						<div class="F1c3">
+							<img src="/home/sunwentao/桌面/tupian/J2.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1d">
+						<div class="F1d3">
+							<img src="/home/sunwentao/桌面/tupian/J3.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1e">
+						<div class="F1e3">
+							<img src="/home/sunwentao/桌面/tupian/J4.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1f">
+						<div class="F1f3">
+							<img src="/home/sunwentao/桌面/tupian/J5.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1g">
+						<div class="F1g3">
+							<img src="/home/sunwentao/桌面/tupian/J6.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1h">
+						<div class="F1h3">
+							<img src="/home/sunwentao/桌面/tupian/J7.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1l">
+						<div class="F1l3">
+							<img src="/home/sunwentao/桌面/tupian/J8.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1i">
+						<div class="F1i3">
+							<img src="/home/sunwentao/桌面/tupian/J9.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+				</div>
+				<div class="F1">
+					<div class="F1a">
+						<div class="F1a1"><a href="">进口食品</a></div>
+						<div class="F1a2">
+							<a href="">精选推荐</a>
+							<a href="">热卖推荐</a>
+						</div>
+					</div>
+					<div class="F1b">
+						<div class="F1b1">
+							<div class="F1b2">
+								<div class="F1b21"><img src="/home/sunwentao/桌面/tupian/K10.png"></div>
+							</div>
+							<div class="F1b3"><img src="/home/sunwentao/桌面/tupian/K1.jpg"></div>
+						</div>
+					</div>
+					<div class="F1c">
+						<div class="F1c3">
+							<img src="/home/sunwentao/桌面/tupian/K2.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1d">
+						<div class="F1d3">
+							<img src="/home/sunwentao/桌面/tupian/K3.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1e">
+						<div class="F1e3">
+							<img src="/home/sunwentao/桌面/tupian/K4.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1f">
+						<div class="F1f3">
+							<img src="/home/sunwentao/桌面/tupian/K5.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1g">
+						<div class="F1g3">
+							<img src="/home/sunwentao/桌面/tupian/K6.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1h">
+						<div class="F1h3">
+							<img src="/home/sunwentao/桌面/tupian/K7.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1l">
+						<div class="F1l3">
+							<img src="/home/sunwentao/桌面/tupian/K8.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1i">
+						<div class="F1i3">
+							<img src="/home/sunwentao/桌面/tupian/K9.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+				</div>
+				<div class="F1">
+					<div class="F1a">
+						<div class="F1a1"><a href="">进口食品</a></div>
+						<div class="F1a2">
+							<a href="">精选推荐</a>
+							<a href="">热卖推荐</a>
+						</div>
+					</div>
+					<div class="F1b">
+						<div class="F1b1">
+							<div class="F1b2">
+								<div class="F1b21"><img src="/home/sunwentao/桌面/tupian/L10.png"></div>
+							</div>
+							<div class="F1b3"><img src="/home/sunwentao/桌面/tupian/L1.jpg"></div>
+						</div>
+					</div>
+					<div class="F1c">
+						<div class="F1c3">
+							<img src="/home/sunwentao/桌面/tupian/L2.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1d">
+						<div class="F1d3">
+							<img src="/home/sunwentao/桌面/tupian/L3.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1e">
+						<div class="F1e3">
+							<img src="/home/sunwentao/桌面/tupian/L4.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1f">
+						<div class="F1f3">
+							<img src="/home/sunwentao/桌面/tupian/L5.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1g">
+						<div class="F1g3">
+							<img src="/home/sunwentao/桌面/tupian/L6.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1h">
+						<div class="F1h3">
+							<img src="/home/sunwentao/桌面/tupian/L7.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1l">
+						<div class="F1l3">
+							<img src="/home/sunwentao/桌面/tupian/L8.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1i">
+						<div class="F1i3">
+							<img src="/home/sunwentao/桌面/tupian/L9.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+				</div>
+				<div class="F1">
+					<div class="F1a">
+						<div class="F1a1"><a href="">进口食品</a></div>
+						<div class="F1a2">
+							<a href="">精选推荐</a>
+							<a href="">热卖推荐</a>
+						</div>
+					</div>
+					<div class="F1b">
+						<div class="F1b1">
+							<div class="F1b2">
+								<div class="F1b21"><img src="/home/sunwentao/桌面/tupian/M10.png"></div>
+							</div>
+							<div class="F1b3"><img src="/home/sunwentao/桌面/tupian/M1.jpg"></div>
+						</div>
+					</div>
+					<div class="F1c">
+						<div class="F1c3">
+							<img src="/home/sunwentao/桌面/tupian/M2.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1d">
+						<div class="F1d3">
+							<img src="/home/sunwentao/桌面/tupian/M3.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1e">
+						<div class="F1e3">
+							<img src="/home/sunwentao/桌面/tupian/M4.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1f">
+						<div class="F1f3">
+							<img src="/home/sunwentao/桌面/tupian/M5.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1g">
+						<div class="F1g3">
+							<img src="/home/sunwentao/桌面/tupian/M6.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1h">
+						<div class="F1h3">
+							<img src="/home/sunwentao/桌面/tupian/M7.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1l">
+						<div class="F1l3">
+							<img src="/home/sunwentao/桌面/tupian/M8.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1i">
+						<div class="F1i3">
+							<img src="/home/sunwentao/桌面/tupian/M9.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+				</div>
+				<div class="F1">
+					<div class="F1a">
+						<div class="F1a1"><a href="">进口食品</a></div>
+						<div class="F1a2">
+							<a href="">精选推荐</a>
+							<a href="">热卖推荐</a>
+						</div>
+					</div>
+					<div class="F1b">
+						<div class="F1b1">
+							<div class="F1b2">
+								<div class="F1b21"><img src="/home/sunwentao/桌面/tupian/N10.png"></div>
+							</div>
+							<div class="F1b3"><img src="/home/sunwentao/桌面/tupian/N1.jpg"></div>
+						</div>
+					</div>
+					<div class="F1c">
+						<div class="F1c3">
+							<img src="/home/sunwentao/桌面/tupian/N2.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1d">
+						<div class="F1d3">
+							<img src="/home/sunwentao/桌面/tupian/N3.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1e">
+						<div class="F1e3">
+							<img src="/home/sunwentao/桌面/tupian/N4.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1f">
+						<div class="F1f3">
+							<img src="/home/sunwentao/桌面/tupian/N5.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1g">
+						<div class="F1g3">
+							<img src="/home/sunwentao/桌面/tupian/N6.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1h">
+						<div class="F1h3">
+							<img src="/home/sunwentao/桌面/tupian/N7.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1l">
+						<div class="F1l3">
+							<img src="/home/sunwentao/桌面/tupian/N8.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1i">
+						<div class="F1i3">
+							<img src="/home/sunwentao/桌面/tupian/N9.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+				</div>
+				<div class="F1">
+					<div class="F1a">
+						<div class="F1a1"><a href="">进口食品</a></div>
+						<div class="F1a2">
+							<a href="">精选推荐</a>
+							<a href="">热卖推荐</a>
+						</div>
+					</div>
+					<div class="F1b">
+						<div class="F1b1">
+							<div class="F1b2">
+								<div class="F1b21"><img src="/home/sunwentao/桌面/tupian/O10.png"></div>
+							</div>
+							<div class="F1b3"><img src="/home/sunwentao/桌面/tupian/O1.jpg"></div>
+						</div>
+					</div>
+					<div class="F1c">
+						<div class="F1c3">
+							<img src="/home/sunwentao/桌面/tupian/O2.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1d">
+						<div class="F1d3">
+							<img src="/home/sunwentao/桌面/tupian/O3.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1f">
+						<div class="F1f3">
+							<img src="/home/sunwentao/桌面/tupian/O7.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>			
+					<div class="F1g">
+						<div class="F1g3">
+							<img src="/home/sunwentao/桌面/tupian/O4.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1h">
+						<div class="F1h3">
+							<img src="/home/sunwentao/桌面/tupian/O5.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+					<div class="F1z">
+						<div class="F1b1">
+							<div class="F1b2">
+								<div class="F1b21"><img src="/home/sunwentao/桌面/tupian/o11.png"></div>
+							</div>
+							<div class="F1b3"><img src="/home/sunwentao/桌面/tupian/O6.jpg"></div>
+						</div>
+					</div>
+					<div class="F1i">
+						<div class="F1i3">
+							<img src="/home/sunwentao/桌面/tupian/O8.jpg">
+						</div>
+							<div class="F1c1">
+								<a href="">[中粮海外直采] 时怡海苔 淡盐</a>
+							</div>
+							<div class="F1c2">
+								<a href="">$19.9</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="neirong3">
+				<div class="A1"></div>
+				<div class="A2">
+					<div class="A2a">
+						<div class="A2a1"><a href="">生鲜蔬果</a></div>
+						<div class="A2a2"><img src="/home/sunwentao/桌面/tupian/P1.png"></div>
+						<ul type="none" class="A2a3">
+							<li>
+								<a href="">进口水果</a>
+								<a href="">国产水果
+								</a>
+							</li>
+							<li>
+								<a href="">海鲜水产</a>
+								<a href="">生肉禽蛋</a>
+							</li>
+							<li>
+								<a href="">蔬菜</a>
+								<a href="">低温乳品/饮料</a>
+							</li>
+							<li>
+								<a href="">糕点</a>
+								<a href="">主食</a>
+							</li>
+							<li>
+								<a href="">熟食/佐餐</a>
+								<a href="">冰激凌</a>
+							</li>
+						</ul>
+					</div>
+					<div class="A2b">
+						<div class="A2a1"><a href="">生鲜蔬果</a></div>
+						<div class="A2a2"><img src="/home/sunwentao/桌面/tupian/P2.png"></div>
+						<ul type="none" class="A2a3">
+							<li>
+								<a href="">进口水果</a>
+								<a href="">国产水果
+								</a>
+							</li>
+							<li>
+								<a href="">海鲜水产</a>
+								<a href="">生肉禽蛋</a>
+							</li>
+							<li>
+								<a href="">蔬菜</a>
+								<a href="">低温乳品/饮料</a>
+							</li>
+							<li>
+								<a href="">糕点</a>
+								<a href="">主食</a>
+							</li>
+							<li>
+								<a href="">熟食/佐餐</a>
+								<a href="">冰激凌</a>
+							</li>
+						</ul>
+					</div>
+					<div class="A2c">
+						<div class="A2a1"><a href="">生鲜蔬果</a></div>
+						<div class="A2a2"><img src="/home/sunwentao/桌面/tupian/P3.png"></div>
+						<ul type="none" class="A2a3">
+							<li>
+								<a href="">进口水果</a>
+								<a href="">国产水果
+								</a>
+							</li>
+							<li>
+								<a href="">海鲜水产</a>
+								<a href="">生肉禽蛋</a>
+							</li>
+							<li>
+								<a href="">蔬菜</a>
+								<a href="">低温乳品/饮料</a>
+							</li>
+							<li>
+								<a href="">糕点</a>
+								<a href="">主食</a>
+							</li>
+							<li>
+								<a href="">熟食/佐餐</a>
+								<a href="">冰激凌</a>
+							</li>
+						</ul>
+					</div>
+					<div class="A2d">
+						<div class="A2a1"><a href="">生鲜蔬果</a></div>
+						<div class="A2a2"><img src="/home/sunwentao/桌面/tupian/P4.png"></div>
+						<ul type="none" class="A2a3">
+							<li>
+								<a href="">进口水果</a>
+								<a href="">国产水果
+								</a>
+							</li>
+							<li>
+								<a href="">海鲜水产</a>
+								<a href="">生肉禽蛋</a>
+							</li>
+							<li>
+								<a href="">蔬菜</a>
+								<a href="">低温乳品/饮料</a>
+							</li>
+							<li>
+								<a href="">糕点</a>
+								<a href="">主食</a>
+							</li>
+							<li>
+								<a href="">熟食/佐餐</a>
+								<a href="">冰激凌</a>
+							</li>
+						</ul>
+					</div>
+					<div class="A2e">
+						<div class="A2a1"><a href="">生鲜蔬果</a></div>
+						<div class="A2a2"><img src="/home/sunwentao/桌面/tupian/P5.png"></div>
+						<ul type="none" class="A2a3">
+							<li>
+								<a href="">进口水果</a>
+								<a href="">国产水果
+								</a>
+							</li>
+							<li>
+								<a href="">海鲜水产</a>
+								<a href="">生肉禽蛋</a>
+							</li>
+							<li>
+								<a href="">蔬菜</a>
+								<a href="">低温乳品/饮料</a>
+							</li>
+							<li>
+								<a href="">糕点</a>
+								<a href="">主食</a>
+							</li>
+							<li>
+								<a href="">熟食/佐餐</a>
+								<a href="">冰激凌</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="A2">
+					<div class="A2a">
+						<div class="A2a1"><a href="">生鲜蔬果</a></div>
+						<div class="A2a2"><img src="/home/sunwentao/桌面/tupian/P6.png"></div>
+						<ul type="none" class="A2a3">
+							<li>
+								<a href="">进口水果</a>
+								<a href="">国产水果
+								</a>
+							</li>
+							<li>
+								<a href="">海鲜水产</a>
+								<a href="">生肉禽蛋</a>
+							</li>
+							<li>
+								<a href="">蔬菜</a>
+								<a href="">低温乳品/饮料</a>
+							</li>
+							<li>
+								<a href="">糕点</a>
+								<a href="">主食</a>
+							</li>
+							<li>
+								<a href="">熟食/佐餐</a>
+								<a href="">冰激凌</a>
+							</li>
+						</ul>
+					</div>
+					<div class="A2b">
+						<div class="A2a1"><a href="">生鲜蔬果</a></div>
+						<div class="A2a2"><img src="/home/sunwentao/桌面/tupian/P7.png"></div>
+						<ul type="none" class="A2a3">
+							<li>
+								<a href="">进口水果</a>
+								<a href="">国产水果
+								</a>
+							</li>
+							<li>
+								<a href="">海鲜水产</a>
+								<a href="">生肉禽蛋</a>
+							</li>
+							<li>
+								<a href="">蔬菜</a>
+								<a href="">低温乳品/饮料</a>
+							</li>
+							<li>
+								<a href="">糕点</a>
+								<a href="">主食</a>
+							</li>
+							<li>
+								<a href="">熟食/佐餐</a>
+								<a href="">冰激凌</a>
+							</li>
+						</ul>
+					</div>
+					<div class="A2c">
+						<div class="A2a1"><a href="">生鲜蔬果</a></div>
+						<div class="A2a2"><img src="/home/sunwentao/桌面/tupian/P8.png"></div>
+						<ul type="none" class="A2a3">
+							<li>
+								<a href="">进口水果</a>
+								<a href="">国产水果
+								</a>
+							</li>
+							<li>
+								<a href="">海鲜水产</a>
+								<a href="">生肉禽蛋</a>
+							</li>
+							<li>
+								<a href="">蔬菜</a>
+								<a href="">低温乳品/饮料</a>
+							</li>
+							<li>
+								<a href="">糕点</a>
+								<a href="">主食</a>
+							</li>
+							<li>
+								<a href="">熟食/佐餐</a>
+								<a href="">冰激凌</a>
+							</li>
+						</ul>
+					</div>
+					<div class="A2d">
+						<div class="A2a1"><a href="">生鲜蔬果</a></div>
+						<div class="A2a2"><img src="/home/sunwentao/桌面/tupian/P9.png"></div>
+						<ul type="none" class="A2a3">
+							<li>
+								<a href="">进口水果</a>
+								<a href="">国产水果
+								</a>
+							</li>
+							<li>
+								<a href="">海鲜水产</a>
+								<a href="">生肉禽蛋</a>
+							</li>
+							<li>
+								<a href="">蔬菜</a>
+								<a href="">低温乳品/饮料</a>
+							</li>
+							<li>
+								<a href="">糕点</a>
+								<a href="">主食</a>
+							</li>
+							<li>
+								<a href="">熟食/佐餐</a>
+								<a href="">冰激凌</a>
+							</li>
+						</ul>
+					</div>
+					<div class="A2e">
+						<div class="A2a1"><a href="">生鲜蔬果</a></div>
+						<div class="A2a2"><img src="/home/sunwentao/桌面/tupian/P0.png"></div>
+						<ul type="none" class="A2a3">
+							<li>
+								<a href="">进口水果</a>
+								<a href="">国产水果
+								</a>
+							</li>
+							<li>
+								<a href="">海鲜水产</a>
+								<a href="">生肉禽蛋</a>
+							</li>
+							<li>
+								<a href="">蔬菜</a>
+								<a href="">低温乳品/饮料</a>
+							</li>
+							<li>
+								<a href="">糕点</a>
+								<a href="">主食</a>
+							</li>
+							<li>
+								<a href="">熟食/佐餐</a>
+								<a href="">冰激凌</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="kong">
+			<ul class="kong1" type="none">
+				<li class="kong1a">
+					<h3>新手上路</h3>
+					<ul type="none" class="kong12">
+						<li class="kong12"><a href="">新用户演示</a></li>
+						<li class="kong12"><a href="">会员积分计划</a></li>
+						<li class="kong12"><a href="">会员等级规则</a></li>
+						<li class="kong12"><a href="">售后服务政策</a></li>
+						<li class="kong12"><a href="">我买网发票制度</a></li>
+					</ul>
+				</li>
+				<li class="kong1a">
+					<h3>新手上路</h3>
+					<ul type="none" class="kong12">
+						<li class="kong12"><a href="">新用户演示</a></li>
+						<li class="kong12"><a href="">会员积分计划</a></li>
+						<li class="kong12"><a href="">会员等级规则</a></li>
+						<li class="kong12"><a href="">售后服务政策</a></li>
+						<li class="kong12"><a href="">我买网发票制度</a></li>
+					</ul>
+				</li>
+				<li class="kong1a">
+					<h3>新手上路</h3>
+					<ul type="none" class="kong12">
+						<li class="kong12"><a href="">新用户演示</a></li>
+						<li class="kong12"><a href="">会员积分计划</a></li>
+						<li class="kong12"><a href="">会员等级规则</a></li>
+						<li class="kong12"><a href="">售后服务政策</a></li>
+						<li class="kong12"><a href="">我买网发票制度</a></li>
+					</ul>
+				</li>
+				<li class="kong1a">
+					<h3>新手上路</h3>
+					<ul type="none" class="kong12">
+						<li class="kong12"><a href="">新用户演示</a></li>
+						<li class="kong12"><a href="">会员积分计划</a></li>
+						<li class="kong12"><a href="">会员等级规则</a></li>
+						<li class="kong12"><a href="">售后服务政策</a></li>
+						<li class="kong12"><a href="">我买网发票制度</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="kong2">
+				<a href="">我买网APP</a>
+				<img src="/home/sunwentao/桌面/tupian/APP.jpg">
+			</div>
+			<div class="kong3">
+				<a href="">我买网微信</a>
+				<img src="/home/sunwentao/桌面/tupian/weixin.jpg">
+			</div>
+		</div>
+		<div class="neirong4"><p>关于我们&nbsp&nbsp|&nbsp&nbsp免责条款&nbsp&nbsp|&nbsp&nbsp中粮集团&nbsp&nbsp|&nbsp&nbsp友情链接&nbsp&nbsp|&nbsp&nbsp搜索热词&nbsp&nbsp|&nbsp&nbsp客服电话:400-005-5678</p></div>
+		<div class="gouwuche">	
+		</div>
+	</div>
+	
+<script type="text/javascript">
+	// a = documet.getElementsByClassName("flc")[0];
+	// function text() {
+	// 	a.style.width = "238px";
+	// 	a.style.height = "220px";
+	// 	a.innerHTML = '<img src="/home/sunwentao/桌面/tupian/A2.jpg">';
+	// }
+</script>
+</body>
+</html>

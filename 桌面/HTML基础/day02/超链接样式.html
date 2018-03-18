@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+	<title>超链接的伪类选择器</title>
+	<style type="text/css">
+		/*a:link{text-decoration: none;}*/
+		a:visited{color: red;}
+		a:hover{background-color: blue;
+			cursor: pointer;
+			cursor: url(/home/sunwentao/桌面/tupian/normal1.cur),auto;
+			text-decoration: none;}
+		a:active{background-color: yellow;}
+		div{width: 100px;
+			height: 100px;
+			border: 5px solid pink;}
+		div:hover{/*background-color: black;*/
+			cursor: text;
+			cursor: url(/home/sunwentao/桌面/tupian/normal1.cur),auto;}
+	</style>
+</head>
+<body>
+	<a href="https://www.baidu.com" target="blank">百度</a>
+	<div></div>
+</body>
+</html>

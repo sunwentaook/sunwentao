@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>滑动</title>
+	<script type="text/javascript" src="jq.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('.test2').click(function () {
+				// $('.test1').slideDown('show');
+				$('.test1').slideDown(3000);
+			})
+		})
+	</script>
+	<style type="text/css">
+		.test1{
+			background-color: red;
+			display: none;
+		}
+		.test2{
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div class="test1">
+		<p class="p1">商品1</p>
+		<p class="p2">商品2</p>
+	</div>
+	<div class="test2">点击</div>
+</body>
+</html>
